@@ -28,8 +28,8 @@ public class Assignment2 {
   public boolean isEmpty() {
    return fruit.size()==0;   
   }
-  public void printStack() {
-    for(int i = fruit.size()-1; i>=0; i--) //code for printing vertically
+  public void printStack() { 
+    for(int i = fruit.size()-1; i>=0; i--) //code for printing vertically //stackoverflow
     {
    System.out.println(fruit.get(i));
    
