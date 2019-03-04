@@ -28,8 +28,8 @@ public class Assignment2 {
   public boolean isEmpty() {
    return fruit.size()==0;   
   }
-  public void printStack() { 
-    for(int i = fruit.size()-1; i>=0; i--) //code for printing vertically //stackoverflow
+  public void printStack() {
+    for(int i = fruit.size()-1; i>=0; i--) //code for printing vertically
     {
    System.out.println(fruit.get(i));
    
@@ -52,12 +52,11 @@ public class Assignment2 {
    q.add(node);
   }
 
-
   public String dequeue() {
    if(!isEmpty()) {
-   String value = q.get(q.size()-1);
-   q.remove(q.size()-1);
-   return value;
+   String value = q.get(q.size()-q.size());
+   q.remove(q.size()-q.size());
+return value;
    }
    else {
     System.out.println("There is nothing to remove");
@@ -69,7 +68,7 @@ public class Assignment2 {
   }
   public void printQueue() {
  //  System.out.println("Not implmented yet");
-   for(int i = q.size()-1; i>=0; i--) //code for printing vertically
+   for(int i = 0; i < q.size(); i++) //code for printing vertically
 {
   System.out.println(q.get(i)); 
 }
